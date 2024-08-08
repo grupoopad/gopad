@@ -1,0 +1,15 @@
+<section class="updates-section">
+    <h2>Últimas Atualizações</h2>
+    <ul class="news-list">
+      <li *ngFor="let art of news">
+        <app-news-card [news]="art"></app-news-card>
+      </li>
+    </ul>    
+  
+    <footer class="pagination-footer">
+      <ul>
+        <li *ngFor="let i of pages" (click)="loadPage(i)">{{i}}</li>
+      </ul>
+    </footer>
+</section>
+  

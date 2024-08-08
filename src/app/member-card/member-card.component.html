@@ -1,0 +1,17 @@
+<div class="member-card">
+  <span class="photoSpan">
+    <figure>
+      <img class="photo" [src]="member.photo" alt="{{member.name}}">
+    </figure>
+  </span>
+  <div class="member-info">
+    <span class="name">{{member.name}}</span>
+    <span class="degree" *ngIf="member.degree"><span class=".pre-info">Grau: </span> {{member.degree}}</span>
+    <span class="interests" *ngIf="member.interests.length > 0"><span class=".pre-info">Interesses: </span> {{member.interests.join(', ')}}</span>
+    <span class="email" *ngIf="member.email"><span class=".pre-info">Email: </span>{{member.email}}</span>
+    <span class="lattes" *ngIf="member.lattes"><span class=".pre-info">Lattes: </span>{{member.lattes}}</span>
+    <span class="phoneNumber" *ngIf="member.phoneNumber"><span class=".pre-info">Número de Telefone: </span>{{member.phoneNumber}}</span>
+    <span class="orcid" *ngIf="member.orcid"><span class=".pre-info">ORCID: </span>{{member.orcid}}</span>
+  </div>
+
+</div>

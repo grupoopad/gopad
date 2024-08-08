@@ -1,0 +1,28 @@
+<nav class="top">
+    <img [class.selected]="ListIsVisible === true"  class="menu-icon" src="assets/img/icons/menu-svgrepo-com.svg" alt="" (click)="changeListVisibility()">
+
+    <div class="nav-sup">
+        <div>
+            <div class="title">
+                <h1 >
+                    Grupo de Estudos em Organização, Processamento e Análise de Dados
+                    </h1>
+            </div>
+            <!-- <div class="title-acr">
+                GOPAD
+            </div> -->
+        </div>
+        <!-- <div class="img">
+            <figure>
+                <img src="assets/img/200x200/cara.png" alt="">
+            </figure>
+        </div> -->
+    </div>
+    <ul class="{{ ListIsVisible?'hidden-ul':'show-ul'}}" >
+        <li (click)="toHome()">Home</li>
+        <li (click)="toMembers()">Equipe</li>
+        <li (click)="toProjects()">Projetos</li>
+        <li (click)="toPublications()">Publicações</li>
+        <!-- <li (click)="toNews()">Notícias</li> -->
+    </ul>
+</nav> 

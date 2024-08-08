@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./sass/colors"
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+
+
+
+html, body
+  padding: 0
+  margin: 0
+  border: 0
+  background-image: radial-gradient(circle at top right, #fff,#fff) 
+
+body
+  app-nav
+    font-family: "Noto Sans", sans-serif
+    font-optical-sizing: auto
+    font-weight: 500
+    font-style: normal
+    font-variation-settings: "wdth" 100 
+
+body
+  app-root
+    background: $first-color-bg-w
+    width: 75vw
+    margin: 45px auto
+    font-family: "Noto Sans", sans-serif
+    font-optical-sizing: auto
+    font-weight: 500
+    font-style: normal
+    font-variation-settings: "wdth" 100 
+    border: 2px solid rgba(0,0,0, .5)
+    box-shadow: 0 0 10px #000000
+
+app-home,
+app-projects,
+app-publications,
+app-news
+    margin: 1.5cm 2.5cm
+    text-align: justify
+
+app-members
+  padding: 1.5cm 2.5cm
+
+@media screen and (max-width: 900px)
+  app-members
+    padding: 0
+  body
+    app-root
+      width: 100vw
+      margin: auto
+      border:0
+
+
+@media screen and (max-width: 615px) 
+  body
+    app-root 
+      margin: 0
+  app-home,
+  app-projects,
+  app-publications,
+  app-news
+      margin: 1.5cm 1cm
+  
+
+@media screen and (max-width: 400px) 
+  app-home,
+  app-projects,
+  app-publications,
+  app-news
+      margin: 0

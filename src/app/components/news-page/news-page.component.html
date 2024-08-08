@@ -1,0 +1,23 @@
+<section class="news-section">
+  <h2>{{news.title}}</h2>
+
+  <h3>Resumo</h3>
+  <p>{{news.abstract}}</p>
+  
+  <section class="authors-section">
+    <h3 *ngIf="news.authors.length > 1">Autores(as):</h3>
+    <h3 *ngIf="news.authors.length == 1">Autor(a):</h3>
+    <ul>
+      <li *ngFor="let a of news.authors">{{a}}</li>
+    </ul>
+    <div class="publication-date">
+      <span>Data de publicação:<br></span> 
+      <span class="date">{{newsService.getDateOfPublication(this.news)}}</span>
+    </div>
+  </section>
+  
+  <div class="content-section">
+    <p class="paragraph" *ngFor="let paragraph of news?.paragraphs">{{paragraph}}</p>
+  </div>
+</section>
+  

@@ -1,0 +1,61 @@
+@import "../../../sass/colors"
+.updates-section
+  
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  padding: 2rem
+  border-radius: 8px
+
+
+  h2
+    font-size: 2rem
+    color: $mnc-fourth-color
+    margin: 0  0 2rem  0
+
+  
+
+  .news-list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-flow: column
+    gap: 1rem
+    flex: 1 0 auto
+    li
+      cursor: pointer
+      height: fit-content
+      margin: 0 0 20px 0
+
+      &:hover
+        box-shadow: 1px 1px 1px rgba(0,0,0, 0.3)
+
+    
+  .pagination-footer
+    flex: 0 0 auto
+    margin-top: auto
+    display: flex
+    justify-content: center
+    padding: 1rem
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+      display: flex
+      gap: 0.5rem
+
+      li
+        cursor: pointer
+        padding: 0.5rem 1rem
+        border-radius: 4px
+        background-color: $mnc-fourth-color
+        color: $first-color-bg-w
+        transition: background-color 0.3s, color 0.3s
+
+        &:hover
+          background-color:  $mnc-second-color
+          color: $second-color-bg-w
+
+  

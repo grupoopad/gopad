@@ -1,0 +1,30 @@
+@import "../../../sass/colors"
+
+.members-section
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  padding: 2rem
+  border-radius: 8px
+
+  h2
+    font-size: 2rem
+  .members-list
+    margin: 25px 0
+    padding: 0
+    
+    // grid-auto-columns: auto
+    li
+      list-style: none
+
+@media screen and (min-width: 1080px) 
+  .members-list
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+
+@media screen and (max-width: 1080px ) 
+  .members-list
+    display: flex
+    flex-flow: column
+    align-items: flex-start
