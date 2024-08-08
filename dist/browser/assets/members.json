@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Cara1",
+        "lattes":"lattes.lattes.lattes",
+        "photo":"assets/img/200x200/cara.png",
+        "email":"example@example.com",
+        "phoneNumber":"",
+        "interests":["example", "example"],
+        "degree":"example",
+        "orcid":"0000-0002-0123-208X."
+    },
+    {
+        "name":"Cara2",
+        "lattes":"lattes.lattes.lattes",
+        "photo":"assets/img/200x200/cara.png",
+        "email":"example@example.com",
+        "phoneNumber":"(99) 99999-0000",
+        "interests":["example", "example"],
+        "degree":"example",
+        "orcid":"0000-0002-0123-208X."
+    }
+]

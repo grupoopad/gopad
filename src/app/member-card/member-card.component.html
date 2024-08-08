@@ -1,9 +1,9 @@
 <div class="member-card">
-  <span class="photoSpan">
+  <div class="photoSpan">
     <figure>
       <img class="photo" [src]="member.photo" alt="{{member.name}}">
     </figure>
-  </span>
+  </div>
   <div class="member-info">
     <span class="name">{{member.name}}</span>
     <span class="degree" *ngIf="member.degree"><span class=".pre-info">Grau: </span> {{member.degree}}</span>

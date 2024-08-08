@@ -9,22 +9,28 @@
 
   h2
     font-size: 2rem
+  h3
+    margin: 25px 0 60px 0  
+    font-size: 1.8rem
+
   .members-list
-    margin: 25px 0
-    padding: 0
-    
-    // grid-auto-columns: auto
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-around
+    margin: 0
     li
       list-style: none
 
-@media screen and (min-width: 1080px) 
-  .members-list
-    display: grid
-    grid-template-columns: 1fr 1fr
+// @media screen and (min-width: 1080px) 
+//   .members-list
+//     display: grid
+//     grid-template-columns: 1fr 1fr
 
 
-@media screen and (max-width: 1080px ) 
-  .members-list
-    display: flex
-    flex-flow: column
-    align-items: flex-start
+// @media screen and (max-width: 1080px ) 
+//   .members-list
+//     display: flex
+//     flex-flow: column
+//     align-items: flex-start
